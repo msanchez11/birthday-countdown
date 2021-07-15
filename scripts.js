@@ -4,11 +4,12 @@ const minutesEl = document.getElementById('min');
 const secondsEl = document.getElementById('sec');
 const yearsOldEl = document.getElementById('yearsOldEl');
 
-let currentYear = 2021;
+let currentYear = new Date().getFullYear();
 let yearsOld = 26;
-let newYears = `9 Jul ${currentYear}`;
+let newYears = `11 Dec ${currentYear}`;
 
 function countdown() {
+
   const newYearsDate = new Date(newYears);
   const currentDate = new Date();
 
@@ -27,7 +28,7 @@ function countdown() {
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     currentYear = currentYear + 1;
     yearsOld = yearsOld + 1;
-    newYears = `9 Jul ${currentYear}`;
+    newYears = `11 Dec ${currentYear}`;
     yearsOldEl.innerHTML = yearsOld;
   }
 }
