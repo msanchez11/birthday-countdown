@@ -5,11 +5,10 @@ const secondsEl = document.getElementById('sec');
 const yearsOldEl = document.getElementById('yearsOldEl');
 
 let currentYear = new Date().getFullYear();
-let yearsOld = 26;
+let yearsOld = currentYear - 1995;
 let newYears = `11 Dec ${currentYear}`;
 
 function countdown() {
-
   const newYearsDate = new Date(newYears);
   const currentDate = new Date();
 
@@ -40,7 +39,6 @@ function formatTime(time) {
     return time;
   }
 }
-
 
 countdown();
 setInterval(countdown, 1000);
