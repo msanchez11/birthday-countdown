@@ -28,8 +28,8 @@ function countdown() {
     currentYear = currentYear + 1;
     yearsOld = yearsOld + 1;
     newYears = `11 Dec ${currentYear}`;
-    yearsOldEl.innerHTML = yearsOld;
   }
+  yearsOldEl.innerHTML = yearsOld;
 }
 
 function formatTime(time) {
